@@ -4,6 +4,8 @@ require(R.utils)
 require(xml2)
 require(dplyr)
 
+options(timeout = 3600) # 1 hour
+
 # Download IUCN ecosystem typology
 # type = type 
 download_IUCN_ecotypo <- function(type = c("raster","shp"),
